@@ -1,4 +1,7 @@
 /* ini css */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .main-title {
     text-align: center;
 }
