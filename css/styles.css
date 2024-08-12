@@ -14,6 +14,7 @@ main {
 form {
     padding: 12px;
     background-color: aliceblue;
+    border-radius: 8px;
 }
 
 aside {
@@ -24,13 +25,20 @@ aside {
     height: 32px;
     background-color: blue;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.button:hover {
+    opacity: 1;
 }
 
 .form-bttn-container{
     margin-top: 24px;
     margin-bottom: 16px;
+    justify-content: space-between;
 }
 
 .bg-cornsilk {
@@ -49,10 +57,60 @@ input[type=number] {
     margin: 8px 0;
     display: inline-block;
     border: 1px #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box; 
+}
+
+
+section {
+    padding: 12px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 footer {
     text-align: center;
+    font-size: 12px;
+}
+
+.result-container {
+    display: none; 
+}
+
+#bmi-result {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#bmi-value {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#bmi-status {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#bmi-description {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+#download-bmi {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#download-bmi:hover {
+    opacity: 0.8;
 }

@@ -15,26 +15,28 @@
     <main>
         <aside>
             <article>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang, 
+                    berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br>
+                Yuk, hitung sekarang di kalkulator BMI.</p>
             </article>
             <form>
                 <div>
-                    <h4>jenis kelamin</h4>
+                    <h4>Jenis Kelamin</h4>
                     <input type="radio" id="laki-laki" name="jenis-kelamin"><label for="laki-laki">laki-laki</label>
                     <input type="radio" id="perempuan" name="jenis-kelamin"><label for="perempuan">perempuan</label>
                 </div>
                 <div>
                     <h4>Berat Badan</h4>
-                    <input type="number">
+                    <input type="number" id="berat-badan">
 
                     <h4>Usia</h4>
-                    <input type="number">
+                    <input type="number" id="usia">
 
                     <h4>Tinggi Badan</h4>
-                    <input type="number">
+                    <input type="number" id="tinggi-badan">
                 </div>
                 <div class="form-bttn-container">
-                    <button class="button bg-cornsilk">Hitung BMI</button>
+                    <button class="button bg-cornsilk" id="hitung-bmi">Hitung BMI</button>
                     <button class="button bg-reset">Reset</button>
                 </div>
             </form>
@@ -42,17 +44,39 @@
             <!-- keterangan form -->
             <article>
                 <header>
-                    <h4>keterangan form</h4>
+                    <h4>Keunggulan Fitur</h4>
+                    <ul style="list-style-type: decimal;">
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                    </ul>
                 </header>
     
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa(wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini).
+                    dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang
+                memenuhi syarat seperti dokter.</p>
+                <p>
+                    Kalkulator ini akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
+                    Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan anda dibagi kuadrat tinggi
+                    badan anda.
+                </p>
             </article>
         </aside>
 
         <aside>
-            <section>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h4 style="text-align: center;">Hasil BMI Anda</h4>
+            <section id="hasil-bmi" class="hasil-bmi-container">
+                
+                <div id="bmi-result" class="bmi-result">
+                    <p id="bmi-status">Status BMI</p>
+                    <h1 id="bmi-value">0.0</h1>
+                    <p id="bmi-description">Deskripsi BMI</p>
+                    <button id="download-bmi">Download Hasil BMI</button>
+                </div>
+                <p id="bmi-range"></p>
+                <p id="bmi-advice"></p>
             </section>
+            <p id="bmi-saran"></p>
         </aside>
     </main>
 
