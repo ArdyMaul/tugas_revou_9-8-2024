@@ -84,6 +84,7 @@ footer {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    font-size: 13px;
 }
 
 #bmi-value {
@@ -106,9 +107,10 @@ footer {
     background-color: #00aaff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 10px 20px;
     cursor: pointer;
+    height: 52px;
 }
 
 #download-bmi:hover {
